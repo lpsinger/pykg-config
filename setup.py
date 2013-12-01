@@ -30,7 +30,7 @@
 __version__ = "$Revision: $"
 # $Source$
 
-from distutils.core import setup
+from setuptools import setup
 import sys
 
 scripts = ['pykg-config.py']
@@ -57,6 +57,7 @@ setup(name='pykg-config',
           'Topic :: Utilities'
           ],
       packages=['pykg_config'],
-      scripts=scripts
+      scripts=scripts,
+      zip_safe=False
       )
 
